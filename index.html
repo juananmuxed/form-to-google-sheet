@@ -1,0 +1,84 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solicitud para participar en los directos</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-lg-2 col-sm-2"><img class="float-left" height="100" src="img/MINILOGO_NOSHADOW.png" alt="BcP Juegos"></div>
+            <div class="col-lg col-sm-12"><h1>Solicitud para los directos</h1></div>
+            <div class="col-lg-3 col-sm-4 redes container">
+                <div class="row">
+                    <div class="col my-3"><a href="https://twitter.com/companyname" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></div>
+                    <div class="col my-3"><a href="https://www.youtube.com/companyname" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></div>
+                    <div class="col my-3"><a href="https://www.facebook.com/companyname/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></div>
+                    <div class="col my-3"><a href="https://www.twitch.tv/companyname" target="_blank"><ion-icon name="logo-twitch"></ion-icon></a></div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    
+    <div id="formulario" class="container">
+        <div class="mensajecorrecto invisible">
+            Gracias por enviar tu mensaje, te atenderemos en cuanto nos sea posible.
+        </div>
+        <form name="formulario-para-directos" class="needs-validation p-4 rounded formdirect" novalidate>
+            <div class="form-group">
+                <label for="correo">Correo</label><span class="badge badge-pill badge-info mx-1">Obligatorio</span>
+                <input type="text" id="correo" class="form-control" placeholder="E-mail" name="Email" required>
+                <div class="invalid-feedback">Introduce un correo válido</div>
+            </div>
+            <div class="form-group">
+                <label for="solicitud">Elige una de las opciones por la cual deseas asistir al directo</label><span class="badge badge-pill badge-info mx-1">Obligatorio</span>
+                <select id="solicitud" name="Solicitud" class="custom-select" required>
+                    <option value="">...</option>
+                    <option value="presentacion">Presentar mi juego o proto</option>
+                    <option value="jugar">Venir a jugar en directo</option>
+                    <option value="charla">Charlar en el canal sobre algún tema</option>
+                    <option value="novedades">Presentar novedades</option>
+                </select>
+                <div class="invalid-feedback">Selecciona una de las opciones.</div>
+            </div>
+            <div class="form-group">
+                <label for="quien">Persona o Empresa a la que representas</label><span class="badge badge-pill badge-info mx-1">Obligatorio</span>
+                <input aria-describedby="ayudaper" type="text" id="quien" class="form-control" placeholder="¿Quién eres?" name="Persona" required>
+                <small id="ayudaper" class="form-text text-muted">Si eres un particular deja tu nombre o nick para saber con quién tratar.</small>
+                <div class="invalid-feedback">Introduce al menos un nombre de contacto.</div>
+            </div>
+            <div class="form-group">
+                <label for="producto">Juego o Tema</label>
+                <textarea type="text" id="producto" name="Producto" class="form-control" placeholder="Juegos o temas a tratar"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="otros">Otros detalles</label>
+                <textarea name="Opcion" id="otros" cols="20" rows="5" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="acepta" id="aceptacion" name="Acepta"required>
+                    <label class="form-check-label" for="aceptacion">Aceptas la Ley de Protección de Datos</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-secondary">Enviar</button>
+        </form>
+    </div>
+    
+    <div class="py-5 container text-center">
+        BcP Juegos. Todos los derechos reservados<br>
+        Creado por <a href="http://muxed.es" target="_blank">MuXeD</a>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

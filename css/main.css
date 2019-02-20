@@ -1,0 +1,48 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+    background-color: rgb(255, 211, 169);
+    font-family: 'Raleway' , sans-serif;
+}
+
+h1,h2{
+    font-variant: small-caps;
+}
+
+label{
+    font-weight: bold
+}
+
+form{
+    background-color: rgb(255, 190, 93);
+    border-top: solid 8px rgb(82, 46, 0); 
+}
+
+ion-icon{
+    font-size: 24px;
+    color: rgb(82, 46, 0);
+    transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+}
+
+ion-icon[name="logo-twitter"]:hover{
+    color:#55acee
+}
+
+ion-icon[name="logo-facebook"]:hover{
+    color:#3b5998
+}
+
+ion-icon[name="logo-youtube"]:hover{
+    color:#b31217
+}
+
+ion-icon[name="logo-twitch"]:hover{
+    color:#6441a4
+}
+
+.badge-info{
+    background-color: rgb(184, 99, 73)
+}
